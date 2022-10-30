@@ -1,0 +1,52 @@
+nav {
+    max-width: 1920px;
+    height: 80px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        width: 280px;
+        height: 75px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: rgb(255, 255, 137);
+        .logo-img {
+            width: 75px;
+            height: 100%;
+            // background-color: red;
+            background-image: url(../images/logo.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .logo-text {
+            width: 205px;
+            font-size: 35px;
+            margin-right: 20px;
+            // background-color: aqua;
+            margin-left: 5px;
+            padding-top: 10px;
+            padding-left: 10px;
+            font-family: VintageKing;
+        }
+    }
+
+    .links {
+        margin-right: 20px;
+        a {
+            text-decoration: none;
+            color: $black;
+            margin-left: 20px;
+            font-family: CoolReg;
+            font-size: 20px;
+            transition: 0.25s;
+        }
+        a:hover {
+            color: $orange;
+        }
+    }
+}
