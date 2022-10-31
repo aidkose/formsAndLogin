@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6, p {
     src: url(../css/fonts/coolvetica\ rg\ it.otf);
 }
 
+#app {
+    width: 100%;
+}
+
 footer {
     width: 100%;
     min-height: 130px;
@@ -55,18 +59,18 @@ footer {
             align-items: center;
             width: 200px;
             .fa-twitter {
-                color: $brown;
+                color: $white;
                 font-size: 30px;
                 cursor: pointer;
             }
             .fa-instagram {
-                color: $brown;
+                color: $white;
                 font-size: 30px;
                 cursor: pointer;
 
             }
             .fa-facebook-f {   
-                color: $brown;
+                color: $white;
                 font-size: 30px;
                 cursor: pointer;
 

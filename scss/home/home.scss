@@ -15,7 +15,10 @@
         flex-direction: column;
         justify-content: center;
         .hero-txt {
-            margin-left: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             h1 {
                 font-family: CoolRegIta;
                 font-size: 50px;
@@ -28,23 +31,23 @@
                 letter-spacing: 1px;
                 font-size: 20px;
                 margin-top: -10px;
-                width: 380px;
+                width: 420px;
+                text-align: center;
             }
-        }
-        .CTA {
-            width: 150px;
-            height: 58px;
-            background-color: $teal;
-            margin-top: 25px;
-            margin-left: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $white;
-            font-family: CoolRegCon;
-            font-size: 25px;
-            cursor: pointer;
-            text-decoration: none;
+            .CTA {
+                width: 150px;
+                height: 58px;
+                background-color: $teal;
+                margin-top: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                font-family: CoolRegCon;
+                font-size: 25px;
+                cursor: pointer;
+                text-decoration: none;
+            }
         }
     }
 }

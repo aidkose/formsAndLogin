@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: CoolRegIta;
   src: url(../css/fonts/coolvetica\ rg\ it.otf);
 }
+#app {
+  width: 100%;
+}
+
 footer {
   width: 100%;
   min-height: 130px;
@@ -55,17 +59,17 @@ footer .foot-info .socials {
   width: 200px;
 }
 footer .foot-info .socials .fa-twitter {
-  color: #502a19;
+  color: rgb(255, 248, 214);
   font-size: 30px;
   cursor: pointer;
 }
 footer .foot-info .socials .fa-instagram {
-  color: #502a19;
+  color: rgb(255, 248, 214);
   font-size: 30px;
   cursor: pointer;
 }
 footer .foot-info .socials .fa-facebook-f {
-  color: #502a19;
+  color: rgb(255, 248, 214);
   font-size: 30px;
   cursor: pointer;
 }
@@ -77,7 +81,7 @@ footer .foot-info .socials .fa-facebook-f {
 }
 
 nav {
-  max-width: 1920px;
+  width: 100%;
   height: 80px;
   background-color: rgb(255, 248, 214);
   display: flex;
@@ -142,7 +146,10 @@ nav .links a:hover {
   justify-content: center;
 }
 .home .hero .hero-txt {
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .home .hero .hero-txt h1 {
   font-family: CoolRegIta;
@@ -156,14 +163,14 @@ nav .links a:hover {
   letter-spacing: 1px;
   font-size: 20px;
   margin-top: -10px;
-  width: 380px;
+  width: 420px;
+  text-align: center;
 }
-.home .hero .CTA {
+.home .hero .hero-txt .CTA {
   width: 150px;
   height: 58px;
   background-color: #1c9d7c;
   margin-top: 25px;
-  margin-left: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +185,6 @@ nav .links a:hover {
   width: 100%;
   min-height: 600px;
   margin: 0 auto;
-  position: relative;
   background-color: #d4b75e;
   display: flex;
   flex-direction: column;
@@ -188,6 +194,7 @@ nav .links a:hover {
 .create h1 {
   font-family: CoolReg;
   letter-spacing: 2px;
+  margin-top: 20px;
 }
 .create form {
   display: flex;
@@ -208,16 +215,16 @@ nav .links a:hover {
   box-shadow: none;
   padding-left: 5px;
   height: 45px;
-  width: 300px;
+  width: 500px;
 }
 .create form input:focus {
   outline: none !important;
   border: #1c9d7c 3px solid;
 }
 .create form #submit {
-  margin: 30px auto 50px auto;
   width: 150px;
   height: 58px;
+  margin: 25px auto 25px auto;
   background-color: #1c9d7c;
   display: flex;
   justify-content: center;
@@ -228,10 +235,53 @@ nav .links a:hover {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.create #edit {
-  margin: 30px auto 50px auto;
+
+.login {
+  width: 100%;
+  height: 700px;
+  background-color: #d4b75e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .profile-form {
+  width: 960px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login .profile-form .login-side {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login .profile-form .login-side h2 {
+  font-family: CoolReg;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-underline-offset: 6.5px;
+}
+.login .profile-form .login-side input {
+  border: none;
+  background-color: rgb(255, 248, 214);
+  box-shadow: none;
+  padding-left: 5px;
+  height: 45px;
+  width: 300px;
+}
+.login .profile-form .login-side input:focus {
+  outline: none !important;
+  border: #1c9d7c 3px solid;
+}
+.login .profile-form .login-side button {
   width: 150px;
   height: 58px;
+  margin: 25px auto 25px auto;
   background-color: #1c9d7c;
   display: flex;
   justify-content: center;
@@ -242,7 +292,66 @@ nav .links a:hover {
   letter-spacing: 1px;
   cursor: pointer;
   border: none;
-  margin-top: -25px;
+}
+.login .profile-form .signup-side {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login .profile-form .signup-side h2 {
+  font-family: CoolReg;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-underline-offset: 6.5px;
+}
+.login .profile-form .signup-side input {
+  border: none;
+  background-color: rgb(255, 248, 214);
+  box-shadow: none;
+  padding-left: 5px;
+  height: 45px;
+  width: 300px;
+}
+.login .profile-form .signup-side input:focus {
+  outline: none !important;
+  border: #1c9d7c 3px solid;
+}
+.login .profile-form .signup-side button {
+  width: 150px;
+  height: 58px;
+  margin: 25px auto 25px auto;
+  background-color: #1c9d7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 248, 214);
+  font-family: CoolRegCon;
+  font-size: 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 960px) {
+  .login .profile-form {
+    flex-direction: column;
+  }
+  .login .profile-form .login-side h2 {
+    margin-top: -40px;
+  }
+  .login .profile-form .login-side input {
+    margin-top: 20px;
+  }
+  .login .profile-form .signup-side h2 {
+    margin-top: -15px;
+  }
+  .login .profile-form .signup-side input {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
