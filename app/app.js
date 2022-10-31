@@ -20,7 +20,7 @@ function initHashListener() {
 }
 
 function submitListener() {
-  $("#app #submit").click(function (e) {
+  $("#submit").click(function (e) {
     e.preventDefault();
     let recordName = $("#recName").val();
     let year = $("#year").val();
@@ -70,7 +70,6 @@ function submitListener() {
       code: "017285026",
       track: "10",
     };
-
     console.log(userObj);
     $("#recName").val(userObj.recordName);
     $("#year").val(userObj.year);
@@ -82,6 +81,20 @@ function submitListener() {
     $("#country").val(userObj.country);
     $("#code").val(userObj.code);
     $("#track").val(userObj.track);
+  });
+
+  $("#logSub").click(function (e) {
+    let email = $("#email").val();
+    let password = $("#password").val();
+    console.log("inputs " + email + " " + password);
+  });
+
+  $("#signSub").click(function (e) {
+    let email = $("#email").val();
+    let password = $("#password").val();
+    let fName = $("#fName").val();
+    let lName = $("#lName").val();
+    console.log("inputs " + email + " " + password + " " + fName + " " + lName);
   });
 }
 

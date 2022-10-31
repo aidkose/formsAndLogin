@@ -1,10 +1,17 @@
 .login {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: $beige;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+        p {
+            width: 40%;
+            font-family: CoolReg;
+            letter-spacing: 2.4px;
+            margin-bottom: 30px;
+            }
     .profile-form {
         width: 960px;
         height: 600px;
@@ -42,7 +49,7 @@
                 outline: none !important;
                 border: $teal 3px solid;
             }
-            button {
+            #logSub {
                 width: 150px;
                 height: 58px;
                 margin: 25px auto 25px auto;
@@ -86,7 +93,8 @@
                 outline: none !important;
                 border: $teal 3px solid;
             }
-            button {
+
+            #signSub {
                 width: 150px;
                 height: 58px;
                 margin: 25px auto 25px auto;
@@ -107,6 +115,9 @@
 
 @media screen and (max-width: 960px) {
     .login {
+        p {
+            margin-bottom: 105px;
+        }
         .profile-form {
             flex-direction: column;
             .login-side {
@@ -119,7 +130,7 @@
             }
             .signup-side {
                 h2 {
-                    margin-top: -15px;
+                    margin-top: -5px;
                 }
                 input {
                     margin-top: 20px;

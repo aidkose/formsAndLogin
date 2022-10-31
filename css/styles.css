@@ -305,16 +305,25 @@ nav .links a:hover {
 .edit p {
   font-family: CoolReg;
   letter-spacing: 2.4px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  width: 70%;
+  text-align: center;
 }
 
 .login {
   width: 100%;
-  height: 700px;
+  height: 800px;
   background-color: #d4b75e;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.login p {
+  width: 40%;
+  font-family: CoolReg;
+  letter-spacing: 2.4px;
+  margin-bottom: 30px;
 }
 .login .profile-form {
   width: 960px;
@@ -350,7 +359,7 @@ nav .links a:hover {
   outline: none !important;
   border: #1c9d7c 3px solid;
 }
-.login .profile-form .login-side button {
+.login .profile-form .login-side #logSub {
   width: 150px;
   height: 58px;
   margin: 25px auto 25px auto;
@@ -392,7 +401,7 @@ nav .links a:hover {
   outline: none !important;
   border: #1c9d7c 3px solid;
 }
-.login .profile-form .signup-side button {
+.login .profile-form .signup-side #signSub {
   width: 150px;
   height: 58px;
   margin: 25px auto 25px auto;
@@ -409,6 +418,9 @@ nav .links a:hover {
 }
 
 @media screen and (max-width: 960px) {
+  .login p {
+    margin-bottom: 105px;
+  }
   .login .profile-form {
     flex-direction: column;
   }
@@ -419,7 +431,7 @@ nav .links a:hover {
     margin-top: 20px;
   }
   .login .profile-form .signup-side h2 {
-    margin-top: -15px;
+    margin-top: -5px;
   }
   .login .profile-form .signup-side input {
     margin-top: 20px;
