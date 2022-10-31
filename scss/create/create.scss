@@ -17,7 +17,7 @@
     form {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
         label {
             font-size: 23px;
@@ -52,5 +52,9 @@
             letter-spacing: 1px;
             cursor: pointer;
         }
+    }
+    p {
+        font-family: CoolReg;
+        letter-spacing: 2.4px;
     }
 }

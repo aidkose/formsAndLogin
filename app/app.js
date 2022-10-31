@@ -56,17 +56,33 @@ function submitListener() {
     );
   });
 
-  // $("#edit").click(function (e) {
-  //   e.preventDefault();
-  //   let userObj = {
-  //     recordName: "Eel",
-  //     year: "1978",
-  //   };
+  $("#edit").click(function (e) {
+    e.preventDefault();
+    let userObj = {
+      recordName: "Leviathan",
+      year: "2004",
+      artist: "Mastodon",
+      genre: "Metal",
+      label: "Relapse",
+      price: "29.87",
+      speed: "33.3rpm",
+      country: "USA",
+      code: "017285026",
+      track: "10",
+    };
 
-  //   console.log(userObj);
-  //   $("#recName").val(userObj.recordName);
-  //   $("#year").val(userObj.year);
-  // });
+    console.log(userObj);
+    $("#recName").val(userObj.recordName);
+    $("#year").val(userObj.year);
+    $("#artist").val(userObj.artist);
+    $("#genre").val(userObj.genre);
+    $("#label").val(userObj.label);
+    $("#price").val(userObj.price);
+    $("#speed").val(userObj.speed);
+    $("#country").val(userObj.country);
+    $("#code").val(userObj.code);
+    $("#track").val(userObj.track);
+  });
 }
 
 $(document).ready(function () {

@@ -199,7 +199,7 @@ nav .links a:hover {
 .create form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 .create form label {
@@ -234,6 +234,78 @@ nav .links a:hover {
   font-size: 25px;
   letter-spacing: 1px;
   cursor: pointer;
+}
+.create p {
+  font-family: CoolReg;
+  letter-spacing: 2.4px;
+}
+
+.edit {
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+  background-color: #d4b75e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.edit h1 {
+  font-family: CoolReg;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.edit form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.edit form label {
+  font-size: 23px;
+  font-family: CoolRegCon;
+  margin-top: 25px;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+.edit form input {
+  border: none;
+  background-color: rgb(255, 248, 214);
+  box-shadow: none;
+  padding-left: 5px;
+  height: 45px;
+  width: 500px;
+}
+.edit form input:focus {
+  outline: none !important;
+  border: #1c9d7c 3px solid;
+}
+.edit .butt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit .butt button {
+  margin: 30px auto 50px auto;
+  width: 150px;
+  height: 58px;
+  background-color: #1c9d7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 248, 214);
+  font-family: CoolRegCon;
+  font-size: 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.edit p {
+  font-family: CoolReg;
+  letter-spacing: 2.4px;
+  margin-bottom: 20px;
 }
 
 .login {
