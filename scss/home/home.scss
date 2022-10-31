@@ -43,10 +43,16 @@
                 justify-content: center;
                 align-items: center;
                 color: $white;
+                text-align: center;
                 font-family: CoolRegCon;
                 font-size: 25px;
                 cursor: pointer;
                 text-decoration: none;
+                transition: 0.2s;
+            }
+            .CTA:hover {
+                background-color: #16735c;
+                border: 3px solid $teal;
             }
         }
     }

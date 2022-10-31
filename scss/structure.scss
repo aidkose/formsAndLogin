@@ -49,9 +49,11 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        color: $white;
         h5 {
             font-family: CoolReg;
-            letter-spacing: 0.5px;
+            letter-spacing: 2px;
+            font-weight: 100;
         }
         .socials {
             display: flex;
